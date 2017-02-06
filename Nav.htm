@@ -1,0 +1,36 @@
+<nav class="navbar navbar-inverse navbar-fixed-top " style="background-image: url(image/logo.png);">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="visibility: hidden;">EzaseMzansi</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="bk active"><a href="addNews.php?id=<?php echo mt_rand()?>" class="w3-text-white bh"><span class="active"><strong>Home</strong></span></a></li>
+          <li class="bk"><a href="Edit.php?id=<?php echo mt_rand()?>" class="w3-text-white bh"><strong>Edit</strong></a></li>
+          <li class="bk"><a href="DeleteNews.php?id=<?php echo mt_rand()?>" class="w3-text-white bh"><strong>Delete</strong></a></li>
+          
+		  <li class="bk"><a href="rules.php?id=<?php echo mt_rand()?>" class="w3-text-white bh"><strong>Rules</strong></a></li>
+		  <li class="bk"><a href="reward.php?id=<?php echo mt_rand()?>" class="w3-text-white bh"><strong>Reward</strong></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            
+            <li class="dropdown">
+              <a class="w3-text-white" href="#" class="dropdown-toggle"
+               data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			  <span class="glyphicon glyphicon-user"></span>&nbsp;<strong>Hi' <?php echo $use_row['username']; ?></strong>&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="w3-text-black" href="logout.php?logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
+                
+              </ul>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</nav> 
